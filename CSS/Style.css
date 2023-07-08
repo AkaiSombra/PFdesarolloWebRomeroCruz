@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#articleNameIndex{
+    margin: 200px auto;
+}
+
+.nameIndex{
+    font-family: 'Oswald', sans-serif;
+    font-size: 600%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hobbysIndex{
+    font-family: 'Poppins', sans-serif;
+    font-size: 250%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#articleAboutMeIndex{
+    margin-top: 150px;
+    margin-bottom: 300px;
+}
+
+.nameAboutMeIndex{
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    margin: 50px 100px 50px 200px;
+    width: 800px;
+    font-size: 350%;
+    font-weight: 500;
+}
+
+.aboutMeIndex{
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    margin: 50px 100px 50px 200px;
+    width: 800px;
+    font-size: 120%;
+    font-weight: 500;
+}
+
+.imageAboutMeIndex{
+    position: absolute;
+    display: inline;
+    width: 15%;
+    margin: auto 100px auto 1350px;
+    bottom: -25%;
+}
+
+#articleProjectsIndex{
+    margin-top: 150px;
+    margin-bottom: 300px;
+}
+
+.projectsTitleIndex{
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 600%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.projectsTextIndex{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.projectsCrunchyrollImage{
+    width: 30%;
+    height: 30%;
+}
+
+.projectsHidiveImage{
+    width: 30%;
+    height: 30%;
+}
+
+#footer{
+    margin: 100px auto;
+}
+
+.footerFollow{
+    font-family: 'Oswald', sans-serif;
+    font-size: 400%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footerUlInstagram{
+    width: 10%;
+    height: 10%;
+}
+
+.footerUlTwitter{
+    width: 10%;
+    height: 10%;
+}
+
+.footerUlLinkedin{
+    width: 10%;
+    height: 10%;
+}
