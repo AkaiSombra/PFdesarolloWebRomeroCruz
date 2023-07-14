@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+/*     min-width: 100vh; */
 }
 
 #footer{
@@ -66,470 +67,974 @@
     color: white;
   }
 
-/* Index */
+/* Index Desktop */
 
-#mainIndex {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, auto);
+@media (min-width:992px) {
+
+    #mainIndex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    #articleNameIndex{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        margin: 300px;
+    }
+
+    .nameIndex{
+        font-family: 'Oswald', sans-serif;
+        font-size: 600%;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hobbysIndex{
+        font-family: 'Poppins', sans-serif;
+        font-size: 250%;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #articleAboutMeIndex{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .nameAboutMeIndex{
+        font-family: 'Oswald', sans-serif;
+        font-size: 350%;
+        font-weight: 500;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: end;
+        margin: 50px;
+    }
+
+    .aboutMeIndex{
+        font-family: 'Poppins', sans-serif;
+        font-size: 120%;
+        font-weight: 500;
+        text-align: center;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        align-self: start;
+        margin: 50px;
+    }
+
+    .imageAboutMeIndex{
+        width: 50%;
+        height: auto;
+        grid-column: 2/3;
+        grid-row: 1/3;
+        padding: 10px;
+    }
+
+    #articleProjectsIndex{
+        grid-column: 1/3;
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .projectsTitleIndex{
+        font-family: 'Oswald', sans-serif;
+        font-size: 600%;
+        font-weight: bold;
+        text-align: center;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .projectsWebProgramming{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .projectsTextWebProgramming{
+        font-family: 'Poppins', sans-serif;
+        font-size: 200%;
+        font-weight: bold;
+        text-align: center;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .projectsCrunchyrollLinkImage{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 75%;
+        height: auto;
+    }
+
+    .projectsCrunchyrollImage{
+        width: 100%;
+        height: auto;
+    }
+
+    .projectsHidiveLinkImage{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 75%;
+        height: auto;
+    }
+
+    .projectsHidiveImage{
+        width: 100%;
+        height: auto;
+    }
+
+    .projectsVideoEditor{
+        grid-column: 1/3;
+        grid-row: 3/4;
+        padding-top: 2%;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(2, auto);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .projectsTextVideoEditor{
+        font-family: 'Poppins', sans-serif;
+        font-size: 200%;
+        font-weight: bold;
+        text-align: center;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .projectsYoutubeVideo {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .projectsTiktokVideo {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
 }
 
-#articleNameIndex{
-    grid-column: 1/3;
-    grid-row: 1/2;
-    margin: 300px;
-}
+/* Index Mobile */
 
-.nameIndex{
-    font-family: 'Oswald', sans-serif;
-    font-size: 600%;
-    font-weight: bold;
-    text-align: center;
-}
+@media (max-width:991px) {
 
-.hobbysIndex{
-    font-family: 'Poppins', sans-serif;
-    font-size: 250%;
-    font-weight: bold;
-    text-align: center;
-}
-
-#articleAboutMeIndex{
-    grid-column: 1/3;
-    grid-row: 2/3;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    justify-items: center;
-    align-items: center;
-}
-
-.nameAboutMeIndex{
-    font-family: 'Oswald', sans-serif;
-    font-size: 350%;
-    font-weight: 500;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    align-self: end;
-    margin: 50px;
-}
-
-.aboutMeIndex{
-    font-family: 'Poppins', sans-serif;
-    font-size: 120%;
-    font-weight: 500;
-    text-align: center;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    align-self: start;
-    margin: 50px;
-}
-
-.imageAboutMeIndex{
-    width: 50%;
-    height: auto;
-    grid-column: 2/3;
-    grid-row: 1/3;
-    padding: 10px;
-}
-
-#articleProjectsIndex{
-    grid-column: 1/3;
-    grid-row: 3/4;
-    display: grid;
-    grid-template-columns: 1fr 1fr  ;
-    grid-template-rows: repeat(3, auto);
-    justify-items: center;
-    align-items: center;
-}
-
-.projectsTitleIndex{
-    font-family: 'Oswald', sans-serif;
-    font-size: 600%;
-    font-weight: bold;
-    text-align: center;
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
-
-.projectsWebProgramming{
-    grid-column: 1/3;
-    grid-row: 2/3;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
-    justify-items: center;
-    align-items: center;
-}
-
-.projectsTextWebProgramming{
-    font-family: 'Poppins', sans-serif;
-    font-size: 200%;
-    font-weight: bold;
-    text-align: center;
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
-
-.projectsCrunchyrollLinkImage{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    width: 75%;
-    height: auto;
-}
-
-.projectsCrunchyrollImage{
-    width: 100%;
-    height: auto;
-}
-
-.projectsHidiveLinkImage{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    width: 75%;
-    height: auto;
-}
-
-.projectsHidiveImage{
-    width: 100%;
-    height: auto;
-}
-
-.projectsVideoEditor{
-    grid-column: 1/3;
-    grid-row: 3/4;
-    display: grid;
-    grid-template-columns: repeat(2,auto);
-    grid-template-rows: repeat(2, auto);
-    justify-items: center;
-    align-items: center;
-}
-
-.projectsTextVideoEditor{
-    font-family: 'Poppins', sans-serif;
-    font-size: 200%;
-    font-weight: bold;
-    text-align: center;
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
-
-.projectsYoutubeVideo {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-.projectsTiktokVideo {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
+    #mainIndex {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+    }
+    
+    #articleNameIndex{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+        padding-top: 5%;
+        padding-bottom: 5%;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .nameIndex{
+        font-family: 'Oswald', sans-serif;
+        font-size: 300%;
+        font-weight: bold;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .hobbysIndex{
+        font-family: 'Poppins', sans-serif;
+        font-size: 200%;
+        font-weight: bold;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+     #articleAboutMeIndex{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3,auto);
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .nameAboutMeIndex{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .aboutMeIndex{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+    .imageAboutMeIndex{
+        width: 35%;
+        height: auto;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    #articleProjectsIndex{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+        justify-items: center;
+        align-items: center;
+        row-gap: 2%;
+    }
+    
+    .projectsTitleIndex{
+        font-family: 'Oswald', sans-serif;
+        font-size: 250%;
+        font-weight: bold;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .projectsWebProgramming{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(3, auto);
+        justify-items: center;
+        align-items: center;
+        row-gap: 2%;
+    }
+    
+    .projectsTextWebProgramming{
+        font-family: 'Poppins', sans-serif;
+        font-size: 125%;
+        font-weight: bold;
+        text-align: center;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .projectsCrunchyrollLinkImage{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 75%;
+        height: auto;
+    }
+    
+    .projectsCrunchyrollImage{
+        width: 100%;
+        height: auto;
+    }
+    
+    .projectsHidiveLinkImage{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        width: 75%;
+        height: auto;
+    }
+    
+    .projectsHidiveImage{
+        width: 100%;
+        height: auto;
+    }
+    
+    .projectsVideoEditor{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(3, auto);
+        justify-items: center;
+        align-items: center;
+        padding-bottom: 10%;
+    }
+    
+    .projectsTextVideoEditor{
+        font-family: 'Poppins', sans-serif;
+        font-size: 125%;
+        font-weight: bold;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .projectsYoutubeVideo {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .projectsTiktokVideo {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    } 
+    }
   
-/*   About */
+/* About Desktop */
 
-#articleAboutMeAbout {
-    display: grid;
-    grid-template-columns: repeat(10, 10%);
-    grid-template-rows: auto auto;
-    margin-bottom: 3%;
-} 
+@media (min-width:992px) {
 
-.aboutMeAbout {
-    grid-column: 2/8;
-    grid-row: 1/2;
-    margin-top: 3%;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
+    #articleAboutMeAbout {
+        display: grid;
+        grid-template-columns: repeat(10, 10%);
+        grid-template-rows: auto auto;
+        margin-bottom: 3%;
+    } 
+
+    .aboutMeAbout {
+        grid-column: 2/8;
+        grid-row: 1/2;
+        margin-top: 3%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    .aboutMeTitleAbout{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .aboutMeTextAbout{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-top: 2%;
+    } 
+
+    .educationAbout{
+        grid-column: 2/8;
+        grid-row: 3/4;
+        margin-top: 3%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .educationTitleAbout{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .educationText1About{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-top: 2%;
+    }
+
+    .educationText2About{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin-top: 2%;
+    }
 }
 
- .aboutMeTitleAbout{
-    grid-column: 1/2;
-    grid-row: 1/2;
+/* About Mobile */
+
+@media (max-width:991px) {
+
+    #articleAboutMeAbout {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: auto auto;
+        row-gap: 2%;
+    } 
+
+    .aboutMeAbout {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        align-items: center;
+        row-gap: 3%;
+    }
+
+    .aboutMeTitleAbout{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .aboutMeTextAbout{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-left: 3%;
+        padding-right: 3%;
+    } 
+
+    .educationAbout{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        justify-items: center;
+        align-items: center;
+        row-gap: 3%;
+    }
+
+    .educationTitleAbout{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .educationText1About{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .educationText2About{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
 }
 
-.aboutMeTextAbout{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    margin-top: 2%;
-} 
+/* Portafolio Desktop */
 
-.educationAbout{
-    grid-column: 2/8;
-    grid-row: 3/4;
-    margin-top: 3%;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
+@media (min-width:992px) {
+
+    #mainPortafolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .articlenWebProgamingPortafolio{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .sectionWebProgamingPortafolio {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .webProgrammingTitlePortafolio {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        font-family: 'Oswald', sans-serif;
+        font-size: 350%;
+        font-weight: normal;
+        text-align: center;
+        padding: 3%;
+    }
+
+    .webProgrammingCrunchyrollLinkPortafolio {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 75%;
+        height: auto;
+    }
+
+    .webProgrammingCrunchyrollImagePortafolio {
+        width: 100%;
+        height: auto;
+    }
+
+    .webProgrammingHidiveLinkPortafolio {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 75%;
+        height: auto;
+    }
+
+    .webProgrammingHidiveImagePortafolio{
+        width: 100%;
+        height: auto;
+    }
+
+    .webProgrammingFunimationLinkPortafolio {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        width: 75%;
+        height: auto;
+    }
+
+    .webProgrammingFunimationImagePortafolio {
+        width: 100%;
+        height: auto;
+    }
+
+    .articleVideoEditorPortafolio{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .videoEditorTitlePortafolio{
+        grid-column: 1/4;
+        grid-row: 1/2;
+        font-family: 'Oswald', sans-serif;
+        font-size: 350%;
+        font-weight: normal;
+        text-align: center;
+        padding: 3%;
+    }
+
+    .sectionYoutubePortafolio{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        column-gap: 1%;
+    }
+
+    .youtubeTitlePortafolio {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        font-family: 'Poppins', sans-serif;
+        font-size: 200%;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 2%;
+    }
+
+    .youtube1VideoPortafolio {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .youtube2VideoPortafolio {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .youtube3VideoPortafolio {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .sectionShortsPortafolio{
+        grid-column: 1/4;
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(4, auto);
+        padding-bottom: 5%;
+        column-gap: 1%;
+    }
+
+    .tiktokTitlePortafolio {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        font-family: 'Poppins', sans-serif;
+        font-size: 200%;
+        font-weight: bold;
+        text-align: center;
+        padding: 2% 2%;
+        column-gap: 1%;
+    }
+
+    .tiktok1Portafolio {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .tiktok2Portafolio {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .tiktok3Portafolio {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .youtubeShortsTitlePortafolio {
+        grid-column: 1/4;
+        grid-row: 3/4;
+        font-family: 'Poppins', sans-serif;
+        font-size: 200%;
+        font-weight: bold;
+        text-align: center;
+        padding: 2% 2%;
+    }
+
+    .youtube1ShortsPortafolio {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .youtube2ShortsPortafolio {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    .youtube3ShortsPortafolio {
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
 }
 
-.educationTitleAbout{
-    grid-column: 1/2;
-    grid-row: 1/2;
+/* Portafolio Mobile */
+
+/* @media (max-width:991px) {
+
+    #mainPortafolio {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+        row-gap: 2%;
+    }
+
+    .articlenWebProgamingPortafolio{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .sectionWebProgamingPortafolio {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(4, auto);
+        justify-items: center;
+        align-items: center;
+        row-gap: 2%;
+    }
+
+    .webProgrammingTitlePortafolio {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-family: 'Oswald', sans-serif;
+        font-size: 250%;
+        font-weight: normal;
+        padding: 3%;
+    }
+
+    .webProgrammingCrunchyrollLinkPortafolio {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 75%;
+        height: auto;
+    }
+
+    .webProgrammingCrunchyrollImagePortafolio {
+        width: 100%;
+        height: auto;
+    }
+
+    .webProgrammingHidiveLinkPortafolio {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        width: 75%;
+        height: auto;
+    }
+
+    .webProgrammingHidiveImagePortafolio{
+        width: 100%;
+        height: auto;
+    }
+
+    .webProgrammingFunimationLinkPortafolio {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        width: 75%;
+        height: auto;
+    }
+
+    .webProgrammingFunimationImagePortafolio {
+        width: 100%;
+        height: auto;
+    }
+
+    .articleVideoEditorPortafolio{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        row-gap: 2%;
+    }
+
+    .videoEditorTitlePortafolio{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-family: 'Oswald', sans-serif;
+        font-size: 250%;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .sectionYoutubePortafolio{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, auto);
+        row-gap: 2%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .youtubeTitlePortafolio {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-family: 'Poppins', sans-serif;
+        font-size: 200%;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .youtube1VideoPortafolio {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .youtube2VideoPortafolio {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .youtube3VideoPortafolio {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .sectionShortsPortafolio{
+        grid-column: 1/4;
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .tiktokTitlePortafolio {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-family: 'Poppins', sans-serif;
+        font-size: 250%;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .tiktok1Portafolio {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .tiktok2Portafolio {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .tiktok3Portafolio {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .youtubeShortsTitlePortafolio {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        font-family: 'Poppins', sans-serif;
+        font-size: 200%;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .youtube1ShortsPortafolio {
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+
+    .youtube2ShortsPortafolio {
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+
+    .youtube3ShortsPortafolio {
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+} */
+
+/* Blog Desktop */
+
+
+
+/* Contact Desktop */
+
+@media (min-width:992px) {
+
+    .articleContact{
+        margin-top: 3%;
+        margin-left: 2%;
+        margin-right: 2%;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .sectionFormContact{
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+
+    .formContact {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(9, auto);
+    }
+
+    .nameTitleFormContact {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .nameInputFormContact{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .lastnameTitleFormContact{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .lastnameInputFormContact{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .emailTitleFormContact{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    .emailInputFormContact{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+
+    .messageTitleFormContact{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+
+    .messageInputFormContact{
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+
+    .submitFormContact{
+        grid-column: 1/2;
+        grid-row: 9/10;
+    }
+
+    .sectionTextContact{
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
 }
 
-.educationText1About{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    margin-top: 2%;
-}
+/* Contact Mobile */
 
-.educationText2About{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    margin-top: 2%;
-}
+@media (max-width:991px) {
 
-/* Portafolio */
+    .articleContact{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(2, auto);
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+        row-gap: 2%;
+    }
 
-#mainPortafolio {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, auto);
-}
+    .sectionFormContact{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
 
-.articlenWebProgamingPortafolio{
-    grid-column: 1/4;
-    grid-row: 1/2;
-}
+    .formContact {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(9, auto);
+        row-gap: 2%;
+    }
 
-.sectionWebProgamingPortafolio {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(2, auto);
-    justify-items: center;
-    align-items: center;
-}
+    .nameTitleFormContact {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
 
-.webProgrammingTitlePortafolio {
-    grid-column: 1/4;
-    grid-row: 1/2;
-    font-family: 'Oswald', sans-serif;
-    font-size: 350%;
-    font-weight: normal;
-    text-align: center;
-    padding: 3%;
-}
+    .nameInputFormContact{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
 
-.webProgrammingCrunchyrollLinkPortafolio {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    width: 75%;
-    height: auto;
-}
+    .lastnameTitleFormContact{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
 
-.webProgrammingCrunchyrollImagePortafolio {
-    width: 100%;
-    height: auto;
-}
+    .lastnameInputFormContact{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
 
-.webProgrammingHidiveLinkPortafolio {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    width: 75%;
-    height: auto;
-}
+    .emailTitleFormContact{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
 
-.webProgrammingHidiveImagePortafolio{
-    width: 100%;
-    height: auto;
-}
+    .emailInputFormContact{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
 
-.webProgrammingFunimationLinkPortafolio {
-    grid-column: 3/4;
-    grid-row: 2/3;
-    width: 75%;
-    height: auto;
-}
+    .messageTitleFormContact{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
 
-.webProgrammingFunimationImagePortafolio {
-    width: 100%;
-    height: auto;
-}
+    .messageInputFormContact{
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
 
-.articleVideoEditorPortafolio{
-    grid-column: 1/4;
-    grid-row: 2/3;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
-    justify-items: center;
-    align-items: center;
-}
+    .submitFormContact{
+        grid-column: 1/2;
+        grid-row: 9/10;
+    }
 
-.videoEditorTitlePortafolio{
-    grid-column: 1/4;
-    grid-row: 1/2;
-    font-family: 'Oswald', sans-serif;
-    font-size: 350%;
-    font-weight: normal;
-    text-align: center;
-    padding: 3%;
-}
-
-.sectionYoutubePortafolio{
-    grid-column: 1/4;
-    grid-row: 2/3;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(2, auto);
-    column-gap: 1%;
-}
-
-.youtubeTitlePortafolio {
-    grid-column: 1/4;
-    grid-row: 1/2;
-    font-family: 'Poppins', sans-serif;
-    font-size: 200%;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 2%;
-}
-
-.youtube1VideoPortafolio {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-.youtube2VideoPortafolio {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-.youtube3VideoPortafolio {
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-
-.sectionShortsPortafolio{
-    grid-column: 1/4;
-    grid-row: 3/4;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(4, auto);
-    padding-bottom: 5%;
-    column-gap: 1%;
-}
-
-.tiktokTitlePortafolio {
-    grid-column: 1/4;
-    grid-row: 1/2;
-    font-family: 'Poppins', sans-serif;
-    font-size: 200%;
-    font-weight: bold;
-    text-align: center;
-    padding: 2% 2%;
-    column-gap: 1%;
-}
-
-.tiktok1Portafolio {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-.tiktok2Portafolio {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-.tiktok3Portafolio {
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-
-.youtubeShortsTitlePortafolio {
-    grid-column: 1/4;
-    grid-row: 3/4;
-    font-family: 'Poppins', sans-serif;
-    font-size: 200%;
-    font-weight: bold;
-    text-align: center;
-    padding: 2% 2%;
-}
-
-.youtube1ShortsPortafolio {
-    grid-column: 1/2;
-    grid-row: 4/5;
-}
-
-.youtube2ShortsPortafolio {
-    grid-column: 2/3;
-    grid-row: 4/5;
-}
-
-.youtube3ShortsPortafolio {
-    grid-column: 3/4;
-    grid-row: 4/5;
-}
-
-/* Blog */
-
-
-
-/* Contact */
-
-.articleContact{
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, auto);
-}
-
-.sectionFormContact{
-    grid-column: 2/3;
-    grid-row: 1/3;
-}
-
-.formContact {
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(9, auto);
-}
-
-.nameTitleFormContact {
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-.nameInputFormContact{
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-.lastnameTitleFormContact{
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-
-.lastnameInputFormContact{
-    grid-column: 1/2;
-    grid-row: 4/5;
-}
-
-.emailTitleFormContact{
-    grid-column: 1/2;
-    grid-row: 5/6;
-}
-
-.emailInputFormContact{
-    grid-column: 1/2;
-    grid-row: 6/7;
-}
-
-.messageTitleFormContact{
-    grid-column: 1/2;
-    grid-row: 7/8;
-}
-
-.messageInputFormContact{
-    grid-column: 1/2;
-    grid-row: 8/9;
-}
-
-.submitFormContact{
-    grid-column: 1/2;
-    grid-row: 9/10;
-}
-
-.sectionTextContact{
-    grid-column: 1/2;
-    grid-row: 1/3;
+    .sectionTextContact{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
 }
