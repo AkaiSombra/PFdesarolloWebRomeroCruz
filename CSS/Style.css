@@ -156,7 +156,7 @@
     grid-column: 1/3;
     grid-row: 2/3;
     display: grid;
-    grid-template-columns: auto auto  ;
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
     justify-items: center;
     align-items: center;
@@ -171,25 +171,35 @@
     grid-row: 1/2;
 }
 
-.projectsCrunchyrollImage{
-    width: 75%;
-    height: auto;
+.projectsCrunchyrollLinkImage{
     grid-column: 1/2;
     grid-row: 2/3;
+    width: 75%;
+    height: auto;
+}
+
+.projectsCrunchyrollImage{
+    width: 100%;
+    height: auto;
+}
+
+.projectsHidiveLinkImage{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 75%;
+    height: auto;
 }
 
 .projectsHidiveImage{
-    width: 75%;
+    width: 100%;
     height: auto;
-    grid-column: 2/3;
-    grid-row: 2/3;
 }
 
 .projectsVideoEditor{
     grid-column: 1/3;
     grid-row: 3/4;
     display: grid;
-    grid-template-columns: auto auto  ;
+    grid-template-columns: repeat(2,auto);
     grid-template-rows: repeat(2, auto);
     justify-items: center;
     align-items: center;
@@ -303,30 +313,36 @@
 .webProgrammingCrunchyrollLinkPortafolio {
     grid-column: 1/2;
     grid-row: 2/3;
+    width: 75%;
+    height: auto;
 }
 
 .webProgrammingCrunchyrollImagePortafolio {
-    width: 75%;
+    width: 100%;
     height: auto;
 }
 
 .webProgrammingHidiveLinkPortafolio {
     grid-column: 2/3;
     grid-row: 2/3;
+    width: 75%;
+    height: auto;
 }
 
 .webProgrammingHidiveImagePortafolio{
-    width: 75%;
+    width: 100%;
     height: auto;
 }
 
 .webProgrammingFunimationLinkPortafolio {
     grid-column: 3/4;
     grid-row: 2/3;
+    width: 75%;
+    height: auto;
 }
 
 .webProgrammingFunimationImagePortafolio {
-    width: 75%;
+    width: 100%;
     height: auto;
 }
 
