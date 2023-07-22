@@ -12,7 +12,6 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-/*     min-width: 100vh; */
 }
 
 #footer{
@@ -75,6 +74,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, auto);
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
 
     #articleNameIndex{
@@ -170,6 +171,7 @@
         text-align: center;
         grid-column: 1/3;
         grid-row: 1/2;
+        margin: 3%;
     }
 
     .projectsCrunchyrollLinkImage{
@@ -214,6 +216,7 @@
         text-align: center;
         grid-column: 1/3;
         grid-row: 1/2;
+        margin: 3%;
     }
 
     .projectsYoutubeVideo {
@@ -516,9 +519,191 @@
     }
 }
 
+/* Portafolio Mini Desktop */
+
+@media (min-width:992px) and (max-width:1628px) {
+
+    #mainPortafolio {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);    
+    }
+
+    .articlenWebProgamingPortafolio{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .sectionWebProgamingPortafolio {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .webProgrammingTitlePortafolio {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        font-family: 'Oswald', sans-serif;
+        font-size: 350%;
+        font-weight: normal;
+        text-align: center;
+        padding: 3%;
+    }
+
+    .webProgrammingCrunchyrollLinkPortafolio {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 75%;
+        height: auto;
+    }
+
+    .webProgrammingCrunchyrollImagePortafolio {
+        width: 100%;
+        height: auto;
+    }
+
+    .webProgrammingHidiveLinkPortafolio {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 75%;
+        height: auto;
+    }
+
+    .webProgrammingHidiveImagePortafolio{
+        width: 100%;
+        height: auto;
+    }
+
+    .webProgrammingFunimationLinkPortafolio {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        width: 75%;
+        height: auto;
+    }
+
+    .webProgrammingFunimationImagePortafolio {
+        width: 100%;
+        height: auto;
+    }
+
+    .articleVideoEditorPortafolio{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .videoEditorTitlePortafolio{
+        grid-column: 1/4;
+        grid-row: 1/2;
+        font-family: 'Oswald', sans-serif;
+        font-size: 350%;
+        font-weight: normal;
+        text-align: center;
+        padding: 3%;
+    }
+
+    .sectionYoutubePortafolio{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: auto 2% auto 2% auto;
+        grid-template-rows: auto 2% auto 2% auto ;
+    }
+
+    .youtubeTitlePortafolio {
+        grid-column: 1/6;
+        grid-row: 1/2;
+        font-family: 'Poppins', sans-serif;
+        font-size: 200%;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 2%;
+    }
+
+    .youtube1VideoPortafolio {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .youtube2VideoPortafolio {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .youtube3VideoPortafolio {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    .sectionShortsPortafolio{
+        grid-column: 1/4;
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: auto 2% auto 2% auto;
+        grid-template-rows: auto 2% auto 2% auto 2% auto 2% 1fr 2% 1fr;
+        padding-bottom: 5%;
+    }
+
+    .tiktokTitlePortafolio {
+        grid-column: 1/6;
+        grid-row: 1/2;
+        font-family: 'Poppins', sans-serif;
+        font-size: 200%;
+        font-weight: bold;
+        text-align: center;
+        padding: 5% 5%;
+    }
+
+    .tiktok1Portafolio {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .tiktok2Portafolio {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .tiktok3Portafolio {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    .youtubeShortsTitlePortafolio {
+        grid-column: 1/6;
+        grid-row: 7/8;
+        font-family: 'Poppins', sans-serif;
+        font-size: 200%;
+        font-weight: bold;
+        text-align: center;
+        padding: 2% 2%;
+    }
+
+    .youtube1ShortsPortafolio {
+        grid-column: 1/2;
+        grid-row: 9/10;
+    }
+
+    .youtube2ShortsPortafolio {
+        grid-column: 3/4;
+        grid-row: 9/10;
+    }
+
+    .youtube3ShortsPortafolio {
+        grid-column: 1/2;
+        grid-row: 11/12;
+    }
+}
+
 /* Portafolio Desktop */
 
-@media (min-width:992px) {
+@media (min-width:1629px) {
 
     #mainPortafolio {
         display: grid;
@@ -703,14 +888,20 @@
 
 /* Portafolio Mobile */
 
-/* @media (max-width:991px) {
+@media (max-width:991px) {
 
-    #mainPortafolio {
+     #mainPortafolio {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: repeat(2, auto);
-        row-gap: 2%;
+        grid-template-rows: auto 2% auto 2% auto;
+        padding-bottom: 50%;
     }
+
+    #footer{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
 
     .articlenWebProgamingPortafolio{
         grid-column: 1/2;
@@ -720,24 +911,23 @@
     .sectionWebProgamingPortafolio {
         display: grid;
         grid-template-columns: repeat(1, auto);
-        grid-template-rows: repeat(4, auto);
+        grid-template-rows: 2% auto 2% auto 2% auto 2% auto;
         justify-items: center;
         align-items: center;
-        row-gap: 2%;
     }
 
     .webProgrammingTitlePortafolio {
         grid-column: 1/2;
-        grid-row: 1/2;
+        grid-row: 2/3;
         font-family: 'Oswald', sans-serif;
         font-size: 250%;
         font-weight: normal;
-        padding: 3%;
+        text-align: center;
     }
 
     .webProgrammingCrunchyrollLinkPortafolio {
         grid-column: 1/2;
-        grid-row: 2/3;
+        grid-row: 4/5;
         width: 75%;
         height: auto;
     }
@@ -749,7 +939,7 @@
 
     .webProgrammingHidiveLinkPortafolio {
         grid-column: 1/2;
-        grid-row: 3/4;
+        grid-row: 6/7;
         width: 75%;
         height: auto;
     }
@@ -761,7 +951,7 @@
 
     .webProgrammingFunimationLinkPortafolio {
         grid-column: 1/2;
-        grid-row: 4/5;
+        grid-row: 8/9;
         width: 75%;
         height: auto;
     }
@@ -773,16 +963,17 @@
 
     .articleVideoEditorPortafolio{
         grid-column: 1/2;
-        grid-row: 2/3;
+        grid-row: 3/4;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, auto);
-        row-gap: 2%;
+        grid-template-rows: 2% auto 2% auto 2% auto;
+        justify-items: center;
+        align-items: center;
     }
 
     .videoEditorTitlePortafolio{
         grid-column: 1/2;
-        grid-row: 1/2;
+        grid-row: 2/3;
         font-family: 'Oswald', sans-serif;
         font-size: 250%;
         font-weight: normal;
@@ -791,101 +982,319 @@
 
     .sectionYoutubePortafolio{
         grid-column: 1/2;
-        grid-row: 2/3;
+        grid-row: 4/5;
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, auto);
-        row-gap: 2%;
-        justify-items: center;
-        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2% auto 2% auto 2% auto 2% auto;
     }
 
     .youtubeTitlePortafolio {
         grid-column: 1/2;
-        grid-row: 1/2;
+        grid-row: 2/3;
         font-family: 'Poppins', sans-serif;
-        font-size: 200%;
+        font-size: 150%;
         font-weight: bold;
         text-align: center;
     }
 
     .youtube1VideoPortafolio {
         grid-column: 1/2;
-        grid-row: 2/3;
+        grid-row: 4/5;
     }
 
     .youtube2VideoPortafolio {
         grid-column: 1/2;
-        grid-row: 3/4;
+        grid-row: 6/7;
     }
 
     .youtube3VideoPortafolio {
         grid-column: 1/2;
-        grid-row: 4/5;
+        grid-row: 8/9;
     }
 
     .sectionShortsPortafolio{
-        grid-column: 1/4;
-        grid-row: 3/4;
+        grid-column: 1/2;
+        grid-row: 6/7;
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(8, 1fr);
-        justify-items: center;
-        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2% auto 2% auto 2% auto 
+        2% auto 2% auto 2% auto 2% auto 2% auto;
     }
 
     .tiktokTitlePortafolio {
         grid-column: 1/2;
-        grid-row: 1/2;
-        font-family: 'Poppins', sans-serif;
-        font-size: 250%;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .tiktok1Portafolio {
-        grid-column: 1/2;
         grid-row: 2/3;
-    }
-
-    .tiktok2Portafolio {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-
-    .tiktok3Portafolio {
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-
-    .youtubeShortsTitlePortafolio {
-        grid-column: 1/2;
-        grid-row: 5/6;
         font-family: 'Poppins', sans-serif;
         font-size: 200%;
         font-weight: bold;
         text-align: center;
     }
 
-    .youtube1ShortsPortafolio {
+    .tiktok1Portafolio {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .tiktok2Portafolio {
         grid-column: 1/2;
         grid-row: 6/7;
     }
 
+    .tiktok3Portafolio {
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+
+    .youtubeShortsTitlePortafolio {
+        grid-column: 1/2;
+        grid-row: 10/11;
+        font-family: 'Poppins', sans-serif;
+        font-size: 150%;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .youtube1ShortsPortafolio {
+        grid-column: 1/2;
+        grid-row: 12/13;
+    }
+
     .youtube2ShortsPortafolio {
         grid-column: 1/2;
-        grid-row: 7/8;
+        grid-row: 14/15;
     }
 
     .youtube3ShortsPortafolio {
         grid-column: 1/2;
-        grid-row: 8/9;
+        grid-row: 16/17;
     }
-} */
+}
 
 /* Blog Desktop */
 
+@media (min-width:992px) {
+    #mainBlog {
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: 3% auto auto 3%;
+        padding-bottom: 25%;
+    }
+    
+    .articleAboutTextBlog {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .sectionAboutTextBlog {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto 2% auto;
+    }
 
+    .aboutTitleBlog {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .aboutTextBlog {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .articleEntryBlog {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .sectionEntryBlog {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 4% auto 4% auto 4% auto;
+    }
+
+    .entry1Blog {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+    .entryTitle1Blog {
+        grid-column: 1/2;
+        grid-row: 1/2;  
+    }
+    .entryPhoto1Blog {
+        grid-column: 1/2;
+        grid-row: 2/3; 
+        width: 60%;
+        height: auto;
+    }
+    .entryText1Blog {
+        grid-column: 2/3;
+        grid-row: 2/3; 
+    }
+    .entry2Blog {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+    .entryTitle2Blog {
+        grid-column: 1/2;
+        grid-row: 1/2;  
+    }
+    .entryPhoto2Blog {
+        grid-column: 1/2;
+        grid-row: 2/3; 
+        width: 90%;
+        height: auto;
+    }
+    .entryText2Blog {
+        grid-column: 2/3;
+        grid-row: 2/3; 
+    }
+    .entry3Blog {
+        grid-column: 1/2;
+        grid-row: 6/7;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+    .entryTitle3Blog {
+        grid-column: 1/2;
+        grid-row: 1/2;  
+    }
+    .entryPhoto3Blog {
+        grid-column: 1/2;
+        grid-row: 2/3; 
+        width: 65%;
+        height: auto;
+    }
+    .entryText3Blog {
+        grid-column: 2/3;
+        grid-row: 2/3; 
+    }
+}
+
+/* Blog Mobile */
+
+@media (max-width:992px) {
+    #mainBlog {
+        display: grid;
+        grid-template-columns: 3% auto 3%;
+        grid-template-rows: 3% auto auto 3%;
+        padding-bottom: 50%;
+    }
+    
+    .articleAboutTextBlog {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .sectionAboutTextBlog {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto 2% auto;
+        justify-items: center;
+        align-items: center;
+        row-gap: 2%;
+    }
+
+    .aboutTitleBlog {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .aboutTextBlog {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .articleEntryBlog {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .sectionEntryBlog {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 4% auto 4% auto 4% auto;
+    }
+
+    .entry1Blog {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(3, auto);
+        row-gap: 2%;
+        justify-items: center;
+        align-items: center;
+    }
+    .entryTitle1Blog {
+        grid-column: 1/2;
+        grid-row: 1/2;  
+    }
+    .entryPhoto1Blog {
+        grid-column: 1/2;
+        grid-row: 2/3; 
+        width: 60%;
+        height: auto;
+    }
+    .entryText1Blog {
+        grid-column: 1/2;
+        grid-row: 3/4; 
+    }
+    .entry2Blog {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(3, auto);
+        row-gap: 2%;
+        justify-items: center;
+        align-items: center;
+    }
+    .entryTitle2Blog {
+        grid-column: 1/2;
+        grid-row: 1/2;  
+    }
+    .entryPhoto2Blog {
+        grid-column: 1/2;
+        grid-row: 2/3; 
+        width: 90%;
+        height: auto;
+    }
+    .entryText2Blog {
+        grid-column: 1/2;
+        grid-row: 3/4; 
+    }
+    .entry3Blog {
+        grid-column: 1/2;
+        grid-row: 6/7;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(3, auto);
+        row-gap: 2%;
+        justify-items: center;
+        align-items: center;
+    }
+    .entryTitle3Blog {
+        grid-column: 1/2;
+        grid-row: 1/2;  
+    }
+    .entryPhoto3Blog {
+        grid-column: 1/2;
+        grid-row: 2/3; 
+        width: 65%;
+        height: auto;
+    }
+    .entryText3Blog {
+        grid-column: 1/2;
+        grid-row: 3/4; 
+    }
+}
 
 /* Contact Desktop */
 
